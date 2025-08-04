@@ -1,0 +1,59 @@
+body {
+    font-family: monospace;
+    background-color: rgb(255, 169, 200);
+    text-align: center;
+    color: rgb(131, 30, 30);
+    margin: 20px;
+    overflow-x: hidden;
+}
+
+h1 {
+    font-size: 50px
+}
+
+p {
+    font-size: 25px;
+}
+
+div {
+    background-color: rgb(249, 110, 140);
+    font-size: 25px;
+    padding: 25px;
+    margin-left: 500px;
+    margin-right: 500px;
+    border-radius: 5px;
+    text-align: left;
+}
+
+input {
+    background-color: rgb(255, 133, 167);
+    border: none;
+    border-bottom: 2px solid rgb(255, 252, 252);
+    width: 100%;
+    padding: 12px ;
+    margin: 8px 9px;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+input:focus {
+    border: 3px solid #792121;
+}
+
+label {
+    display: inline-block;
+    width: 100px;
+}
+
+button {
+    background-color: #aa0441;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: right;
+}
+

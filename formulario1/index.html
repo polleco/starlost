@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Simples</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Formulário Simples</h1>
+    <p>Este é um exemplo de formulário simples em HTML</p>
+    <div>
+    <form action="#" method="get"> <!-- form: define o inicio e o fim de um formulario -->
+        <label for="nome">Nome:</label> <!-- label: define um rotulo para um elemento de entrada -->
+        <input type="text" id="nome" name="nome" placeholder="Digite aqui seu nome" required> <!-- input: usado para criar campos de entrada -->
+        <br>
+        <label for="sobrenome">Sobrenome:</label>
+        <input type="text" id="sobrenome" name="sobrenome" placeholder="Digite aqui seu sobrenome" required> <!-- required: nao deixa submeter o form sem preencher esse campo -->
+        <br>
+        <label for="endereco">Endereço:</label>
+        <input type="text" id="endereco" name="endereco" placeholder="Digite aqui seu endereço" required>
+        <br><!-- br: adiciona uma quebra de linha -->
+        <label for="email">E-mail</label>
+        <input type="email" placeholder="Digite aqui o seu E-mail" required><!-- placeholder: texto dentro da caixa -->
+        <br>
+        <label for="idade">Idade</label>
+        <input type="number" id="number" name="number" min="12" max="100" placeholder="Digite aqui a sua idade" required> <!-- min/max: numero minimo ou maximo possivel no campo -->
+        <br>
+        <br>
+        <input style="display: inline; position: absolute; margin-left: -250px;" type="checkbox" id="checkbox" name="checkbox">
+        <label for="checkbox" style="margin-bottom: 20px; display: inline; text-align: left;" >Aceito os termos</label>
+        <br>
+        <br>
+        <label for="cor" style="display: inline;">Escolha uma cor</label>
+        <br>
+        <input type="radio" name="cor" value="verde" style="width: 20px;">Verde
+        <br>
+        <input type="radio" name="cor" value="roxo" style="width: 20px;">Roxo
+        <br>
+        <br>
+        <button type="submit">Enviar</button> <!-- button: cria um botao -->
+    </form>
+    </div>
+</body>
+</html>

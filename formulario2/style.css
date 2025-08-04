@@ -1,0 +1,87 @@
+body {
+    background-color: rgb(194, 255, 170);
+    font-family: monospace;
+    text-align: center;
+    margin: 30px;
+    color: #2c6a00;
+    overflow-x: hidden;
+}
+
+h2 {
+    font-size: 50px;
+    text-align: center;
+}
+
+p {
+    font-size: 25px;
+}
+
+.contato, .cadastro {
+    background-color: rgb(152, 249, 110);
+    font-size: 25px;
+    padding: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    text-align: left;
+    margin-top: 20px;
+    height: 20%;
+}
+
+.form {
+    display: flex
+}
+
+input {
+    background-color: rgb(189, 249, 177);
+    border: none;
+    border-bottom: 2px solid rgb(124, 255, 87);
+    width: 100%;
+    padding: 12px ;
+    margin: 8px 10px;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+input:focus {
+    border: 3px solid #792121;
+}
+
+label {
+    display: inline-block;
+    width: 100px;
+}
+
+button {
+    background-color: #49aa04;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+    width: 100%;
+}
+
+select {
+    width: 100%;
+    padding: 12px ;
+    margin: 8px 9px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(189, 249, 177);
+    color: #2c6a00;
+}
+
+textarea {
+    width: 100%;
+    height: 250px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(189, 249, 177);
+    resize: none;
+}

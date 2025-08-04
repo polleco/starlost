@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Análise e Cadastro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Cadastro e Análise de Alunos</h1>
+  <button onclick="iniciarCadastro()">Iniciar Cadastro</button>
+  <div id="resultado"></div>
+
+  <script>
+    function iniciarCadastro() {
+      let resultadoDiv = document.getElementById("resultado");
+      resultadoDiv.innerHTML = "";
+
+      let qtdAlunos = parseInt(prompt("Quantos alunos deseja cadastrar?"));
+      while (isNaN(qtdAlunos) || qtdAlunos <= 0) {
+        qtdAlunos = parseInt(prompt("Por favor, insira um número válido e maior que 0:"));
+      }
+
+      for (let i = 1; i <= qtdAlunos; i++) {
+        let nome = prompt(`Nome do aluno ${i}:`);
+        while (!nome || nome.trim() === "") {
+          nome = prompt(`Nome inválido. Digite o nome do aluno ${i} novamente:`);
+        }
+
+        let nota1 = parseFloat(prompt(`Nota 1 do(a) ${nome}:`));
+        while (isNaN(nota1)) {
+          nota1 = parseFloat(prompt(`Nota inválida. Digite a nota 1 do(a) ${nome} novamente:`));
+        }
+
+        let nota2 = parseFloat(prompt(`Nota 2 do(a) ${nome}:`));
+        while (isNaN(nota2)) {
+          nota2 = parseFloat(prompt(`Nota inválida. Digite a nota 2 do(a) ${nome} novamente:`));
+        }
+
+        let media = calcularMedia(nota1, nota2);
+        let situacao = media >= 6 ? "Aprovado(a)" : "Reprovado(a)";
+
+        resultadoDiv.innerHTML += 
+          `<p><strong>${nome}</strong>: Média = ${media.toFixed(2)} - ${situacao}</p>`;
+      }
+    }
+
+    function calcularMedia(n1, n2) {
+      return (n1 + n2) / 2;
+    }
+  </script>
+</body>
+</html>
