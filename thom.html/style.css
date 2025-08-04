@@ -1,0 +1,10 @@
+img {
+    width: 200px;
+}
+h1, h2, p {
+    font-style: italic;
+    text-align: center;
+}
+body { 
+    background-image: url("https://i.pinimg.com/564x/06/7f/99/067f99620b1d0c0c730a3f19ce79df55.jpg");
+}
